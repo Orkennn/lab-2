@@ -1,0 +1,95 @@
+1.
+
+import math
+
+a = int(input("Введите сторону а"))
+b = int(input("Введите сторону в"))
+
+hypotenuse = math.sqrt(a**2+b**2)
+
+print(hypotenuse)
+
+2.
+
+lesson_number = int(input())
+lesson_number = lesson_number*45 + (lesson_number//2)*5 + ((lesson_number+1)//2-1)*15
+
+hours = lesson_number//60 + 9
+minutes = lesson_number%60
+
+print(hours,minutes)
+
+
+
+	
+3.
+
+first_number = int(input("Введите первое число для сравнения"))
+second_number = int(input("Введите второе число для сравнения"))
+
+if first_number > second_number:
+    print(1)
+elif second_number > first_number:
+    print(2)
+elif first_number == second_number:
+    print(0)
+
+4.
+
+value1 = int(input("Введите первое число:\n"))
+value2 = int(input("Введите второе число:\n"))
+value3 = int(input("Введите третье число:\n"))
+
+
+print(max(value1, value2, value3))
+
+5.
+
+value1 = int(input("Введите первое число: "))
+value2 = int(input("Введите второе число: "))
+value3 = int(input("Введите третье число: "))
+
+if value1 == value2 == value3:
+    print(3)
+elif value1 == value2 or value2 == value3 or value1 == value3:
+    print(2)
+else:
+    print(0)
+
+6.
+
+value1 = int(input())
+value2 = int(input())
+value3 = int(input())
+
+
+if value1 > value2:
+    value1, value2 = value2, value1
+if value2 > value3:
+    value2, value3 = value3, value2
+if value1 > value2:
+    value1, value2 = value2, value1
+
+
+print(value1, value2, value3)
+
+
+7.
+
+import math
+
+a = int(input())
+b = int(input())
+c = int(input())
+
+discriminant = (b**2 - 4*a*c)
+
+if discriminant >= 0:
+    x1 = (-b + math.sqrt(discriminant)) / (2 * a)
+    x2 = (-b - math.sqrt(discriminant)) / (2 * a)
+    print(x1, x2)
+else:
+    print(" ")
+
+
+
